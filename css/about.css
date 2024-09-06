@@ -20,6 +20,17 @@ header h1 {
     margin: 0;
 }
 
+header {
+    background: #1E2A5E;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -31,7 +42,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #E1D7B7;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
@@ -84,7 +95,7 @@ nav ul li a:hover {
 
 footer {
     background: #1E2A5E;
-    color: #E1D7B7;
+    color: white;
     padding: 1rem;
     text-align: center;
     margin-top: auto; 
