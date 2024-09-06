@@ -1,0 +1,111 @@
+/* Gaya umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Memastikan padding dan border dihitung dalam ukuran elemen */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Pastikan body setidaknya sebesar viewport */
+}
+
+header {
+    background: #1E2A5E;
+    color: #E1D7B7;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #E1D7B7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2rem;
+}
+
+#produk {
+    background: white;
+    color: #1E2A5E;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: #1E2A5E;
+    color: #E1D7B7;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* footer */
+footer {
+    background: #1E2A5E;
+    color: #E1D7B7;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto; 
+}
+
+
+@media (max-width: 1024px) {
+    #produk {
+        padding: 1.5rem; 
+    }
+    
+    .card-container {
+        gap: 15px;
+    }
+
+    .card {
+        width: 200px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    #produk {
+        padding: 1rem; 
+    }
+
+    .card-container {
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%; 
+    }
+}
