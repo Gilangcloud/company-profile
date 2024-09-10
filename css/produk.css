@@ -3,10 +3,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Memastikan padding dan border dihitung dalam ukuran elemen */
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Pastikan body setidaknya sebesar viewport */
+    min-height: 100vh;
 }
 
 header {
@@ -40,13 +40,19 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-section {
-    padding: 2rem;
+main {
+    flex: 1;
 }
 
-#produk {
+.produk-section {
     background: white;
     color: #1E2A5E;
+    padding: 2rem;
+    margin-bottom: 2rem; /* Jarak antar section */
+}
+
+.produk-section h2 {
+    margin-top: 0;
 }
 
 .card-container {
@@ -77,13 +83,12 @@ footer {
     color: white;
     padding: 1rem;
     text-align: center;
-    margin-top: auto; 
 }
 
-
+/* Media queries */
 @media (max-width: 1024px) {
-    #produk {
-        padding: 1.5rem; 
+    .produk-section {
+        padding: 1.5rem;
     }
     
     .card-container {
@@ -91,14 +96,13 @@ footer {
     }
 
     .card {
-        width: 200px; 
+        width: 200px;
     }
 }
 
-
 @media (max-width: 768px) {
-    #produk {
-        padding: 1rem; 
+    .produk-section {
+        padding: 1rem;
     }
 
     .card-container {
@@ -106,6 +110,6 @@ footer {
     }
 
     .card {
-        width: 100%; 
+        width: 100%;
     }
 }
