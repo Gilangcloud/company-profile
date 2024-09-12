@@ -8,14 +8,22 @@
 </head>
 <body>
     <header>
-        <h1>About Us</h1>
+        <div class="logo-container">
+            <img src="/image/logo_pedulimu 1.png" alt="Logo" class="logo"> <!-- Ganti dengan logo Anda -->
+            <span class="company-name">PONG MANIS</span>
+        </div>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="produk.html">Produk</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="produk.html">Products</a></li>
                 <li><a href="visi_misi.html">Visi & Misi</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
     <section id="about">
@@ -40,5 +48,15 @@
     <footer>
         <p>&copy; 2024 PONG MANIS. All rights reserved.</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('nav-active');
+            });
+        });
+    </script>
 </body>
 </html>
