@@ -1,4 +1,8 @@
 /* Gaya umum */
+:root {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -16,8 +20,11 @@ header {
     padding: 1rem;
     background-color: #1e2a5e;
     color: white;
-    position: relative;
-    z-index: 10;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
     
 }
 

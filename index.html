@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Company Profile</title>
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="/css/index.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,15 +12,19 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="/image/logo_pedulimu 1.png" alt="Logo" class="logo">
+            <img src="https://gilangcloud.github.io/company-profile-gilang/image/logo_pedulimu%201.png" alt="Logo" class="logo">
             <span class="company-name">PONG MANIS</span>
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="produk.html">Products</a></li>
-                <li><a href="visi_misi.html">Visi & Misi</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#visi-misi">Visi & Misi</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="#industri">Industri</a></li>
+                <li><a href="#partners">Partner</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -30,10 +34,51 @@
         </nav>
     </header>
     
-    <section id="hero">
-        <h2>Revolutionizing Your Business with Advanced Software Solutions</h2>
+    <section id="hero" class="animate-fade">
+        <div class="hero-container">
+            <h2>Revolutionizing Your Business with Advanced Software Solutions</h2>
         <p>Where Technology Meets Excellence: Tailored Software for Your Needs</p>
-        <a href="about.html" class="cta-button">About Us</a>
+        <a href="produk.html" class="cta-button">View Product</a>
+        </div>
+    </section>
+
+    <section id="about" class="animate-fade">
+        <div class="about-container">
+            
+            <div class="about-image">
+                <img src="image/about/undraw_Software_engineer_re_tnjc.png" alt="About Image">
+            </div>
+            <div class="about-text">
+                <h2>Who We Are and What We Do</h2>
+                <p>Pong Manis passionate team of industry experts provide physical security solutions that meet the ever-evolving challenges of today’s modern enterprises. For over 30 years, many of the world’s largest organizations and government entities have trusted us to deliver secure, flexible, and compliant solutions.</p>
+                <p>
+                    Our goal is simple: Empower organizations to protect their people and property while giving them the tools required to be more productive.
+                </p>
+            </div>
+        </div>
+        <div class="about-commitment">
+            <h3>Our Commitment to Excellence</h3>
+            <p><b>Software</b>: C•CURE 9000 empowers our customers to take full command of their access control, video, intrusion, fire and building automation systems. With the mobile application, plus our thick and thin client offerings, C•CURE 9000 offers ultimate flexibility with ultimate control.</p>
+            <p><b>Hardware</b>: Software House’s door controllers deliver best-in-class performance with flexible deployment options for both centralized and distributed architectures. We lead the industry in our continued support of legacy hardware as part of our commitment to protecting the investment our customers make in us.</p>
+            <p><b>Cyber</b>: We continue to set the bar in cyber security and are relentlessly dedicated to ensuring your data is protected and your networks secure. To keep your hardware and software protected, our products utilize the latest encryption standards and protocols paired with extensive penetration testing and strict IT policy compliance.</p>
+            <p><b>Integrations</b>: Our solution is made more powerful by integrating with the systems our customers are already using. We support a deep library of integrations to the most widely used security, building, and enterprise software solutions, and our integrations are thoroughly tested and updated regularly.</p>
+        </div>
+    </section>
+
+    <section id="visi-misi" class="animate-slide">
+        <div class="grid-item">
+            <h2>Visi</h2>
+            <p>" To be a leading technology company that provides innovative, reliable and sustainable digital solutions to help businesses transform and thrive in the digital era "</p>
+        </div>
+        <div class="grid-item">
+            <h2>Misi</h2>
+            <ul>
+                <li>Providing Innovative Technology Solutions Developing high-quality software tailored to specific customer needs, using the latest technology to deliver innovative and effective solutions.</li>
+                <li>Supporting Digital Transformation Helping companies accelerate digital transformation through technology services that enable business process automation, improve efficiency, and deliver superior user experiences.</li>
+                <li>Building Long-Term Partnerships Forging sustainable working relationships with our partners and clients, based on trust, transparency, and satisfaction.</li>
+            </ul>
+            
+        </div>
     </section>
 
     <section id="industri">
@@ -153,7 +198,7 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="animate-zoom">
         <h2>Contact Us</h2>
         <div class="contact-content">
             <div class="contact-info">
@@ -214,6 +259,22 @@
                 navLinks.classList.toggle('nav-active');
             });
         });
+        const sections = document.querySelectorAll('section');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
     </script>
 </body>
 </html>
