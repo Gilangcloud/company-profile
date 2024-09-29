@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem ;
+    padding: 0.5rem ;
     background-color: #1e2a5e;
     color: white;
     position: sticky;
@@ -29,13 +29,13 @@ header {
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    margin-right: 8px
 }
 
 .company-name {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
 }
 
@@ -57,6 +57,7 @@ header {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 0.9 rem;
 }
 
 .nav-links li a:hover {
@@ -70,8 +71,8 @@ header {
 }
 
 .hamburger span {
-    width: 25px;
-    height: 3px;
+    width: 20px;
+    height: 2px;
     background-color: white;
     margin: 4px;
 }
@@ -343,7 +344,7 @@ p {
 .testimonials-container {
     display: flex;
     overflow: hidden;
-    gap: 20px;
+    gap: 10rem;
     width: 90%;
     margin: 0 auto;
     justify-content: center;
@@ -353,7 +354,7 @@ p {
     background: #1e2a5e;
     color: white;
     border-radius: 8px;
-    padding: 1rem 20px;
+    padding: 1.5rem;
     width: 300px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -403,7 +404,7 @@ p {
 .social-media a {
     display: block;
     margin-bottom: 10px;
-    color: #1e2a5e;
+    color: hsl(229, 52%, 24%);
     text-decoration: none;
 }
 
@@ -458,7 +459,7 @@ footer {
 
     .nav-links.nav-active {
         display: flex;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 
     .nav-links li {
@@ -516,8 +517,9 @@ footer {
     }
 
     .carousel-item {
-        min-width: 100px;
-        
+        min-width: 150px; /* Sesuaikan lebar item untuk perangkat seluler */
+        margin: 1rem; /* Jarak tambahan antar item pada perangkat seluler */
+        padding: 1rem; /* Padding tambahan */
     }
 
     .contact-map iframe {
@@ -531,13 +533,15 @@ footer {
     }
 
     .testimonials-container {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column; /* Ubah arah flex menjadi kolom */
+        gap: 2rem; /* Jarak antar item pada perangkat seluler */
     }
 
     .item {
-        width: 100%; 
-        max-width: 500px; 
+        width: 90%; /* Buat item memenuhi lebar container */
+        max-width: 500px; /* Maksimal lebar item */
+        margin: 1.5rem auto; /* Jarak antar testimoni pada perangkat seluler */
+        padding: 1.5rem; /* Padding tambahan */
     }
 }
 
